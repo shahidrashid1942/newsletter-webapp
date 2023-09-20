@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Quicksand&display=swap"
+        rel="stylesheet">
+    <title>Success</title>
+    <style>
+        body {
+            background-color: #ccc;
+        }
+
+        .main {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        h1,
+        p {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 2.2rem;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        button {
+            border-radius: 0.5rem;
+            padding: 0.4rem;
+            border: none;
+            border: 0.8px solid rgba(20, 225, 225, 0.944);
+        }
+
+        button:hover {
+            background-color: rgba(20, 225, 225, 0.944);
+            transition: 0.2 ease-in;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>uh oh!</h1>
+        <p>Something wrong has occured, please try again</p>
+        <form action="/failure" method="post">
+            <button type="submit" name="button">Try again</button>
+        </form>
+    </div>
+</body>
+
+</html>

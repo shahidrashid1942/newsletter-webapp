@@ -1,0 +1,91 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    flex-direction: column;
+    /* background: -webkit-linear-gradient(360deg, #224e4d 10%, #083023 360%); */
+    background: radial-gradient(circle at -8.9% 51.2%, rgba(255, 124, 0)0%, rgba(255, 124, 0)15.9%, rgba(255, 163, 77)15.9%, rgba(255, 163, 77)24.4%, rgba(19, 30, 37)24.5%, rgba(19, 30, 37)66%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    gap: 1rem;
+    padding: 3rem;
+    border-radius: 1rem;
+    background: blur(16px);
+    /* background-color: #fff; */
+    box-shadow: 0 0 10px 5px #00020450;
+    color: #333;
+}
+
+.bx {
+    /* border: 1px solid rgba(20, 225, 225, 0.944); */
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, -1);
+    border-radius: 0.5rem;
+    display: inline;
+}
+
+.fa {
+    font-size: 1.2rem;
+}
+
+input {
+    border: none;
+    outline: none;
+    padding: 0.8rem;
+    background: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.btn {
+    border-radius: 0.5rem;
+    padding: 0.4rem;
+    border: none;
+    border-bottom: 0.8px solid rgba(20, 225, 225, 0.944);
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    transition: all 0.3s ease-out;
+}
+
+.btn:hover {
+    background-color: rgba(20, 225, 225, 0.944);
+    color: #333;
+    transform: translate(0, 10%);
+    stroke-dashoffset: -480;
+}

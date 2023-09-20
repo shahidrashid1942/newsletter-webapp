@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Quicksand&display=swap"
+        rel="stylesheet">
+    <title>Success</title>
+    <style>
+        body {
+            background-color: #ccc;
+        }
+
+        h1,
+        p {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 2.2rem;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        .main {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Sign-in successfull</h1>
+        <p>You are subscribed to our Newsletter</p>
+    </div>
+
+    <script>
+        let txt = document.querySelector("p");
+        let i = 5;
+
+        function updateText() {
+            if (i >= 0) {
+                txt.textContent = "You will be redirected to your browser in " + i + " seconds";
+                i--;
+                setTimeout(updateText, 1000);
+            }
+        }
+
+        updateText();
+
+    </script>
+</body>
+
+</html>
